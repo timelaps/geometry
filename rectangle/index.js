@@ -1,4 +1,4 @@
-module.exports = rectange;
+module.exports = rectangle;
 var reduce = require('@timelaps/array/reduce');
 var min = require('@timelaps/number/min');
 var max = require('@timelaps/number/max');
@@ -10,7 +10,7 @@ var alternateFn = {
 };
 
 function rectangle(bounds) {
-    if (!bounds.length) {
+    if (!bounds || !bounds.length) {
         return null;
     }
     return reduce(dimensions, function (memo, dimension) {
