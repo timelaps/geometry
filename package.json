@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js",
+    "share": "npm version patch && git push && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/timelaps/geometry/issues"
   },
-  "homepage": "https://github.com/timelaps/geometry#readme"
+  "homepage": "https://github.com/timelaps/geometry#readme",
+  "devDependencies": {
+    "@timelaps/batterie": "^1.0.75"
+  },
+  "dependencies": {
+    "@timelaps/array": "^1.0.23",
+    "@timelaps/is": "^1.0.15",
+    "@timelaps/number": "^1.0.4"
+  }
 }
